@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .Gilroy {
+    font-family: Gilroy;
+  }
+  .inter {
+    font-family: Inter;
+  }
+  .text-grey {
+    color: #7E8299;
+  }
+  .text-blue {
+    color: #2884EF;
+  }
+  .bg-grey {
+    background-color: #EEF6FF;
+  }
+  .bg-blue {
+    background-color: rgba(62, 151, 255, 0.2);
+  }
+  .activeBtn {
+    background-color: #3E97FF;
+    color: white;
+  }
+  .blog-background {
+    background-color: #F1F1F2;
+  }
+  .input-background {
+    background-color: #F9F9F9;
+  }
+  .w-1210px {
+    max-width: 1210px;
+  }
+  .w-1300px {
+    max-width: 1300px;
+  }
+  .w-365 {
+    width: 365px;
+  }
+  .w-100 {
+    width: 25rem;
+  }
+  .w-90 {
+    width: 22.8rem;
+  }
+  .w-88 {
+    width: 22rem;
+  }
+  .w-38px {
+    width: 38px;
+  }
+  .w-37 {
+    width: 37.5rem;
+  }
+  .h-63 {
+    height: 25.5rem;
+  }
+  .h-50 {
+    height: 12.5rem;
+  }
+  .h-19 {
+    height: 4.875rem;
+  }
+  .h-18 {
+    height: 4.5rem;
+  }
+  .h-38px {
+    height: 2.375rem;
+  }
+  .h-220px {
+    height: 13.75rem;
+  }
+  .h-250px {
+    height: 15, 625rem;
+  }
+  .border-50 {
+    border-radius: 50%;
+  }
+  .rounded-20px {
+    border-radius: 1.25rem;
+  }
+  .text-32 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .text-16 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .text-14 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .text-12 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .pb-30px {
+    padding-bottom: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
