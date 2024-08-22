@@ -43,7 +43,6 @@ const props = defineProps({
   blogId: String
 })
 const emit = defineEmits(['closeModal'])
-
 </script>
 
 <style lang="scss" scoped>
