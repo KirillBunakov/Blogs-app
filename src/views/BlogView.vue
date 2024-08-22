@@ -1,15 +1,15 @@
 <template>
   <div>
   <header class="w-1210px mx-auto w-">
-    <div class="h-20 flex flex-row items-center justify-between md:mx-7 s:mx-2.5 s:flex s:pt-3 s:items-start s:h-24">
+    <div class="h-20 flex flex-row items-center justify-between md:mx-7 s:mx-2.5 s:flex s:pt-3 s:items-start s:h-24 s:w-full">
       <div class="flex flex-row gap-10 s:gap-2.5 s:flex-col">
         <h1 class="gilroy font-bold text-32">Блог</h1>
         <div class="relative">
-          <input type="text" v-model="searchTitle" placeholder="Поиск" class="h-10 w-100 box-border pl-8 items-center input-background s:w-fit">
+          <input type="text" v-model="searchTitle" placeholder="Поиск" class="h-10 w-100 box-border pl-8 items-center input-background s:w-88">
           <img src="../assets/img/magnifier.svg" alt="" class="absolute top-3 left-2.5">
         </div>
       </div>
-      <div @click="filter = !filter" class="flex gap-1 w-auto h-fit items-center hover:cursor-pointer s:pt-3 ">
+      <div @click="filter = !filter"  class="flex gap-1 w-auto h-fit items-center hover:cursor-pointer s:pt-3 s:absolute s:right-2">
         <div class="inter text-grey text-sm font-medium">{{ filter==false ? 'Фильтр' : 'Скрыть фильтр'}}</div>
         <div v-if="filter == true" class="w-4 h-3 bg-no-repeat bg-[url('../assets/img/up.svg')]"></div>
         <div v-if="filter == false" class="w-4 h-4 bg-no-repeat bg-[url('../assets/img/down.svg')]"></div>
