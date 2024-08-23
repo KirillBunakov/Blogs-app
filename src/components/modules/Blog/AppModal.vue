@@ -1,5 +1,5 @@
 <template>
-  <div class="-translate-x-1/2 rounded-xl bg-white self-auto p-4 flex flex-col gap-4 w-37 modal-content absolute scroll-auto top-56 left-1/2 md:top-1/2 s:top-80 s:w-88">
+  <div class="-translate-x-1/2 rounded-xl bg-white self-auto p-4 flex flex-col gap-4 w-37 modal-content absolute scroll-auto top-56 left-1/2 md:top-1/2 s:top-80 s:w-full">
     <div class="flex flex-col gap-2.5 relative">
       <h3 class="inter text-2xl font-semibold" >{{ currentBlog.blogTitle }}</h3>
       <blog-info :blog="currentBlog"></blog-info>

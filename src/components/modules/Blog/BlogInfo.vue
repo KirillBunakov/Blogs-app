@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row gap-2.5 items-center inter text-grey text-sm">
+  <div class="flex flex-row gap-2.5 items-center inter text-grey text-sm flex-wrap">
     <p class="font-medium">{{ props.blog.blogDate.date }} {{ getMonth(props.blog.blogDate.month) }}
     </p> 
     <p class="font-semibold">•</p>

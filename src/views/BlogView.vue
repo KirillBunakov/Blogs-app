@@ -1,26 +1,26 @@
 <template>
   <div>
-  <header class="w-1210px mx-auto w-">
-    <div class="h-20 flex flex-row items-center justify-between md:mx-7 s:mx-2.5 s:flex s:pt-3 s:items-start s:h-24 s:w-full">
+  <header class="w-1210px mx-auto">
+    <div class="h-20 flex flex-row items-center justify-between mx-11 md:mx-7 s:ml-2.5 s:flex s:pt-3 s:items-start s:h-24 s:w-fit">
       <div class="flex flex-row gap-10 s:gap-2.5 s:flex-col">
         <h1 class="gilroy font-bold text-32">Блог</h1>
         <div class="relative">
-          <input type="text" v-model="searchTitle" placeholder="Поиск" class="h-10 w-100 box-border pl-8 items-center input-background s:w-88">
+          <input type="text" v-model="searchTitle" placeholder="Поиск" class="h-10 w-100 box-border pl-8 items-center input-background s:w-full md:w-full">
           <img src="../assets/img/magnifier.svg" alt="" class="absolute top-3 left-2.5">
         </div>
       </div>
-      <div @click="filter = !filter"  class="flex gap-1 w-auto h-fit items-center hover:cursor-pointer s:pt-3 s:absolute s:right-2">
+      <div @click="filter = !filter" class="flex gap-1 w-auto h-fit items-center hover:cursor-pointer s:pt-3 s:absolute s:right-2">
         <div class="inter text-grey text-sm font-medium">{{ filter==false ? 'Фильтр' : 'Скрыть фильтр'}}</div>
         <div v-if="filter == true" class="w-4 h-3 bg-no-repeat bg-[url('../assets/img/up.svg')]"></div>
         <div v-if="filter == false" class="w-4 h-4 bg-no-repeat bg-[url('../assets/img/down.svg')]"></div>
       </div>
     </div>
-    <div v-if="filter" class="filter h-18 flex flex-row gap-2 items-center flex-wrap md:my-3 md:h-fit s:my-3 s:h-fit">
+    <div v-if="filter" class="filter h-18 flex flex-row gap-2 items-center flex-wrap my-3 mx-2.5 box-border md:h-fit s:my-3 s:h-fit">
        <filter-btn v-for="(type, index) in filterTypes" :key="index" @click="filterByType(type)">{{ type }}</filter-btn>
     </div>
   </header>
   <section class="blog-background pt-5 pb-30px pb- h-full w-full">
-    <div class="w-1300px bg-white box-border rounded-xl mx-auto flex flex-row flex-wrap gap-5 p-7 md:p-5 md:gap-7">
+    <div class="w-1300px bg-white box-border rounded-xl mx-auto flex flex-row flex-wrap gap-5 p-7 md:p-5 md:grid md:grid-cols-2 md:grid-flow-row md:gap-7 ">
       <blog-card @openModal="openModal" :blogs="blogs" v-if="blogs.length > 0"></blog-card>
       <not-found-filter v-else></not-found-filter>
       <teleport to='body'>

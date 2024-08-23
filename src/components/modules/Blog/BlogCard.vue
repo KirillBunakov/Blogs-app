@@ -1,6 +1,6 @@
 <template>
   <div v-for="blog in props.blogs" :key="blog.id">
-    <div class="w-100 h-100 flex flex-col gap-2.5 md:w-90 s:w-80" @click="$emit('openModal', blog.id)">
+    <div class="w-100 h-100 flex flex-col gap-2.5 s:w-full md:w-full box-border" @click="$emit('openModal', blog.id)">
       <img class="w-auto h-63 rounded-xl md:h-56 s:h-50" :src="blog.blogImage" alt="">
       <blog-info :blog="blog"></blog-info>
       <h2 class="inter text-black text-xl font-semibold">{{ blog.blogTitle }}</h2>
