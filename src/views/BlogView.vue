@@ -1,10 +1,10 @@
 <template>
   <div>
   <header class="w-1210px mx-auto">
-    <div class="h-20 flex flex-row items-center justify-between mx-11 md:mx-7 s:ml-2.5 s:flex s:pt-3 s:items-start s:h-24 s:w-fit">
-      <div class="flex flex-row gap-10 s:gap-2.5 s:flex-col">
+    <div class="h-20 flex flex-row items-center justify-between mx-11 md:mx-7 s:mx-2.5 s:flex s:pt-3 s:items-start s:h-24">
+      <div class="flex flex-row gap-10 s:gap-2.5 s:flex-col md:w-full s:w-full">
         <h1 class="gilroy font-bold text-32">Блог</h1>
-        <div class="relative">
+        <div class="relative w-full md:w-max100 s:w-full">
           <input type="text" v-model="searchTitle" placeholder="Поиск" class="h-10 w-100 box-border pl-8 items-center input-background s:w-full md:w-full">
           <img src="../assets/img/magnifier.svg" alt="" class="absolute top-3 left-2.5">
         </div>
