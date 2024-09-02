@@ -20,11 +20,11 @@
     </div>
   </header>
   <section class="blog-background pt-5 pb-30px pb- h-full w-full">
-    <div class="w-1300px bg-white box-border rounded-xl mx-auto flex flex-row flex-wrap gap-5 p-7 md:p-5 md:grid md:grid-cols-2 md:grid-flow-row md:gap-7 ">
+    <div class="w-1300px bg-white box-border rounded-xl mx-auto flex flex-row flex-wrap gap-5 p-7 md:p-5 md:grid md:grid-cols-2 md:grid-flow-row md:gap-7">
       <blog-card @openModal="openModal" :blogs="blogs" v-if="blogs.length > 0"></blog-card>
       <not-found-filter v-else></not-found-filter>
       <teleport to='body'>
-        <app-modal v-if="showModal == true" :blogs="blogs" :blogId="modalId" @closeModal="openModal"></app-modal>
+        <app-modal v-if="showModal == true" :blogs="blogs" :blogId="modalId" @closeModal="showModal = !showModal"></app-modal>
       </teleport>
     </div>
   </section>

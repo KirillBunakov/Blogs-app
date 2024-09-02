@@ -81,6 +81,12 @@
   .h-250px {
     height: 15, 625rem;
   }
+  .h-100vh {
+    height: 100vh;
+  }
+  .max-h-screen-2rem {
+    max-height: calc(100vh - 4rem);
+  }
   .border-50 {
     border-radius: 50%;
   }

@@ -1,5 +1,6 @@
 <template>
-  <div class="-translate-x-1/2 rounded-xl bg-white self-auto p-4 flex flex-col gap-4 w-37 modal-content absolute scroll-auto top-56 left-1/2 md:top-1/2 md:w-full s:top-80 s:w-full">
+  <div class="w-full backdrop-opacity-35 bg-white/30 fixed -translate-x-1/2 top-0 left-1/2 flex justify-center box-border h-100vh">
+  <div class="rounded-xl bg-white self-auto p-4 flex flex-col gap-4 w-37 overflow-auto box-border h-fit max-h-screen-2rem mt-8 mb-8 border-2 border-black md:w-full md:m-0 md:max-h-screen s:top-80 s:w-full s:m-0 s:max-h-screen">
     <div class="flex flex-col gap-2.5 relative">
       <h3 class="inter text-2xl font-semibold" >{{ currentBlog.blogTitle }}</h3>
       <blog-info :blog="currentBlog"></blog-info>
@@ -27,6 +28,7 @@
         </div>
     </div>
   </div>
+</div>
 </template>
 
 <script setup>
