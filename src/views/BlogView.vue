@@ -11,8 +11,8 @@
       </div>
       <div @click="filter = !filter" class="flex gap-1 w-auto h-fit items-center hover:cursor-pointer s:pt-3 s:absolute s:right-2">
         <div class="inter text-grey text-sm font-medium">{{ filter==false ? 'Фильтр' : 'Скрыть фильтр'}}</div>
-        <div v-if="filter == true" class="w-4 h-3 bg-no-repeat bg-[url('../assets/img/up.svg')]"></div>
-        <div v-if="filter == false" class="w-4 h-4 bg-no-repeat bg-[url('../assets/img/down.svg')]"></div>
+        <div v-if="filter === true" class="w-4 h-3 bg-no-repeat bg-[url('../assets/img/up.svg')]"></div>
+        <div v-else class="w-4 h-4 bg-no-repeat bg-[url('../assets/img/down.svg')]"></div>
       </div>
     </div>
     <div v-if="filter" class="filter h-18 flex flex-row gap-2 items-center flex-wrap my-3 mx-2.5 box-border md:h-fit s:my-3 s:h-fit">
