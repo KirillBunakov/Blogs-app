@@ -24,7 +24,7 @@
       <blog-card @openModal="openModal" :blogs="blogs" v-if="blogs.length > 0"></blog-card>
       <not-found-filter v-else></not-found-filter>
       <teleport to='body'>
-        <app-modal v-if="showModal == true" :blogs="blogs" :blogId="modalId" @closeModal="showModal = !showModal"></app-modal>
+        <app-modal v-if="showModal === true" :blogs="blogs" :blogId="modalId" @closeModal="showModal = !showModal"></app-modal>
       </teleport>
     </div>
   </section>
